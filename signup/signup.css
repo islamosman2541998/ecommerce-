@@ -1,0 +1,171 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+  body 
+  {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background: #E3E6F3;
+  }
+
+
+.container {
+    position: absolute;
+    max-width: 380px;
+    width: 100%;
+    /* height: 57%; */
+    padding: 25px;
+    border-radius: 8px;
+    background:none;  
+    box-shadow: 0 20px 40px rgba(0,0,0,9);
+    z-index: 100;
+    /* border: 2px solid blue; */
+  }
+  .container header h1 {
+    font-size: 30px;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    padding-left:75px;
+    color: #1F3252;
+  }
+  .container form {
+    margin-top: 30px;
+  }
+  form .field {
+    margin-bottom: 20px;
+  }
+  form .input-field {
+    position: relative;
+    height: 50px;
+    width: 100%;
+    color: white;
+    
+  }
+  .input-field input {
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border: none;
+    border-radius: 8px;
+    padding: 0 15px;
+    font-size: 15px;
+    background:none;
+    color: white;
+    border: 1.5px solid #00b4f6;
+  }
+  .input-field button {
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border: none;
+    border-radius: 8px;
+    padding: 0 15px;
+    font-size: 15px;
+    background:none;
+    color: white;
+    border: 1.5px solid #00b4f6;
+  }
+  .invalid input {
+    border-color: #00aaff;
+  }
+  .input-field .show-hide {
+    position: absolute;
+    right: 13px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    color: #ffffff;
+    cursor: pointer;
+    padding: 3px;
+  }
+  .field .error {
+    display: flex;
+    align-items: center;
+    margin-top:10px;
+    color: #ff0000;
+    font-size: 14px;
+    display: none;
+  }
+  .invalid .error {
+    display: flex;
+  }
+  .error .error-icon {
+    margin-right: 6px;
+    font-size: 15px;
+  }
+  .create-password .error {
+    align-items: flex-start;
+  }
+  .create-password .error-icon {
+    margin-top: 4px;
+  }
+  .button {
+    margin: 25px 0 6px;
+  }
+  
+  form .links 
+  {
+      position: relative;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+  }
+  form .links a 
+  {
+      color: #192C49;
+      text-decoration: none;
+      font-size: 15px;
+      font-weight: 700;
+  }
+  form .links a:nth-child(2)
+  {
+      color: rgb(20, 180, 255);
+      font-weight: 600;
+  }
+  
+  .button input {
+    color: rgb(242, 239, 239);
+    font-size: 19px;
+    font-weight: 500;
+    background-color: #192C49;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: none;
+  }
+  .button button:hover {
+    background-color: rgb(70, 86, 255);
+    color: white;
+  }
+  
+  .button button:active {
+    transform: scale(0.95);
+  }
+  
+
+  .success-message {
+    color: green;
+    font-size: 24px;
+  
+
+}
+
+.invalid .error-message {
+  display: block;
+  color: red;
+  font-size: 14px;
+}
+.error-message {
+  display: none;
+}
+.success-message {
+  color: green;
+  font-size: 24px;
+}

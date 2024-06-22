@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+ 
+    <link rel="stylesheet" href="shop.css">
+</head>
+<body>
+    
+    <!-- NAVBAR -->
+    <nav class="navbar navv  fixed-top px-5 navbar-expand-lg navbar-light bg-body-tertiary">
+        <!-- Container wrapper -->
+        <div class="container-fluid">
+          
+          
+      
+          <!-- Collapsible wrapper -->
+          <div class="collapse px-5 navbar-collapse" id="navbarSupportedContent">
+            <!-- Navbar brand -->
+            <a class="navbar-brand mt-2 mt-lg-0" href="../index.html">
+              <img class="logo"
+                src="../images/logo.png"
+                
+                alt="Logo"
+                
+              />
+            </a>
+            <!-- Left links -->
+            <ul class="navbar-nav mx-auto fs-5  fw-bolder mb-2 mb-lg-0">
+              <li class="nav-item ">
+                <a class="nav-link active " href="../index.html">Home</a>
+              </li>
+              <li class="nav-item link">
+                <a class="nav-link link" href="shop.html">Shop</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+            </ul>
+            <!-- Left links -->
+          </div>
+          <!-- Collapsible wrapper -->
+      
+          <!-- Right elements -->
+          <div class="d-flex align-items-center">
+            <!-- Icon -->
+            <a class="text-reset me-3 position-relative" href="../cart/cart.html">
+                <i class="fas fa-shopping-cart"></i>
+                <span id="cart-count" class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                    0
+                </span>
+            </a>
+            <a class="text-decoration-none border-0" href="../login/login.html">
+                <button style="background-color: #277B75;"  
+                class="btn btn-primary border-0 d-flex align-items-center">login</button>
+            </a>
+        </div>
+          <!-- Right elements -->
+        </div>
+       
+          </nav>
+
+        
+       
+
+
+        <div class="container-fluid p-5 con  ">
+            <div class="d-flex ">
+              <button onclick="showjewelery()" class="btn btn1 text-center btn-primary m-3">Jewelery</button>
+            <button onclick="showElectronics()" class="btn btn1 text-center btn-primary m-3">Electronics</button>
+            <button onclick="showMensClothing()" class="btn btn1 text-center btn-primary m-3">Men's Clothing</button>
+            <button onclick="showWomensClothing()" class="btn btn1 text-center btn-primary m-3">Women's Clothing</button>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <div  id="tbody" class="row text-center ">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+  
+
+        <div id="details"></div>
+   
+    <script src="shop.js"></script>
+</body>
+</html>
